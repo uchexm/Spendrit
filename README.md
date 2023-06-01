@@ -32,7 +32,7 @@ SpendRite is a mobile web application where you can manage your budget. You have
 
 ## Video demo
 
-> [Video demo]()
+> [Video demo](https://www.loom.com/share/2cbe7cf26a7f4ec1b69066a123c2644c)
 
 ## 🛠 Built With <a name="built-with"></a>
 
