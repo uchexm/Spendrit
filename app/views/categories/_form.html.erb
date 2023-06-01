@@ -1,0 +1,33 @@
+<%= form_with model: category do |form| %>
+
+  <div class="form-group">
+    <%= form.label :name, "Name" %>
+    <%= form.text_field :name, placeholder: "Categroy name", required: true, class: 'form-control' %>
+  </div>
+
+  <% options = [  ["🍔 Food and dining", "🍔"],
+    ["🛒 Groceries", "🛒"],
+    ["🚗 Tranportation", "🚗"],
+    ["🐶 Pet expenses", "🐶"],
+    ["📚 Book", "📚"],
+    ["💻 Electronics", "💻"],
+    ["🎁 Gift", "🎁"],
+    ["🏠 Housing", "🏠"],
+    ["🏥 Health", "🏥"],
+    ["🎬 Entertainment", "🎬"],
+    ["👔 Clothing", "👔"],
+    ["🎓 Education", "🎓"],
+    ["🧾 Others", "🧾"],
+  ] %>
+
+
+  <div class="form-group">
+    <%= form.label :icon %>
+    <%= form.select :icon, options_for_select(options, selected: category.icon), {prompt: "Select an icon" }, {class: 'form-control'} %>
+  </div>
+
+
+  <%= form.submit "#{editing ? 'Update' : 'Create'} Category", class: 'btn btn-primary' %>
+
+  <%= link_to 'Cancel', categories_path, class: "btn btn-outline" %>
+<% end %>

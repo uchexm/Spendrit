@@ -1,0 +1,25 @@
+<%= render 'shared/header', title: "Categories", back_link: false %>
+<section class="container">
+<div class="total-header">
+    <% expense_count = @unique_expenses.size %>
+    <p>Spending: <%= number_to_currency(@total_expense) %></p>
+    <p>Unique <%= expense_count == 1 ? "Entry: " : "Entries: " %><%= expense_count %></p>
+</div>
+<% if @categories.empty? %>
+    <div class="note-container">
+        <h2 class="note-title">No Categories Yet!</h2> 
+        <p class="note-text">Categories are an essential part of this app. They help you track your expenses by grouping them into different areas of your life, such as 🏠 housing, 🍔 food, and 🎬 entertainment. To get started, create a category for each area where you spend money. <br/>Happy budgeting!</p>
+    </div>
+<% else %>
+    <div class="items-container">
+        <% @categories.each do |category| %>
+            <%= render 'item', category: category, 
+            total: @unique_expenses.map {|i| category.expenses.include?(i) ? i.amount : 0 }.sum %>
+        <% end %>
+    </div>
+<% end %>
+
+<div class="action-container">
+    <%= link_to "Add Category", new_category_path, class: "action-button" %>
+</div>
+</section>
