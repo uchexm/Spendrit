@@ -8,11 +8,12 @@ class Category < ApplicationRecord
   def total_expense
     expenses.sum(:amount)
   end
+
   def total_amount_spent
     expenses.sum(:amount)
   end
+
   def self.total_spending
     Expense.sum(:amount)
   end
-  
 end
