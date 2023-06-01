@@ -2,7 +2,7 @@
 <section class="container">
 <div class="total-header">
     <% expense_count = @unique_expenses.size %>
-    <p>Spending: <%= number_to_currency(@total_expense) %></p>
+    <p>Spending: <%= number_to_currency(Category.total_spending) %></p>
     <p>Unique <%= expense_count == 1 ? "Entry: " : "Entries: " %><%= expense_count %></p>
 </div>
 <% if @categories.empty? %>
@@ -12,11 +12,11 @@
     </div>
 <% else %>
     <div class="items-container">
-        <% @categories.each do |category| %>
-            <%= render 'item', category: category, 
-            total: @unique_expenses.map {|i| category.expenses.include?(i) ? i.amount : 0 }.sum %>
-        <% end %>
-    </div>
+  <% @categories.each do |category| %>
+    <%= render 'item', category: category, total: category.total_amount_spent %>
+  <% end %>
+</div>
+
 <% end %>
 
 <div class="action-container">

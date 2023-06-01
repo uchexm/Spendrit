@@ -1,7 +1,7 @@
 <%= render 'shared/header', title: "#{@category.icon} #{@category.name}", back_link: categories_path %>
 <section class="container">
 <div class="total-header">
-    <p>Spending: <%= number_to_currency(@total_amount) %></p>
+    <p>Spending: <%= number_to_currency(Category.total_spending) %></p>
     <p><%= @expenses.size == 1 ? "Entry: " : "Entries: " %><%= @expenses.size %></p>
 </div>
 <div class="category-actions">
