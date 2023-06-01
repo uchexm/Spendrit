@@ -1,0 +1,6 @@
+<%= render 'shared/header', back_link: categories_path, title: "Edit Category" %>
+<section class="container">
+    <div class="form-container">
+        <%= render 'form', category: @category, editing: true %>
+    </div>
+</section>
