@@ -1,0 +1,69 @@
+<header class="main-header">
+    <% if back_link %>
+        <%= link_to content_tag(:i, "", class: "fa-sharp fa-solid fa-arrow-left"), back_link, class: "icon-btn" %>
+    <% else %>
+        <button type="button" class="icon-btn" onclick="toggleSideMenu();"><i class="fa fa-bars"></i></button>
+    <% end %>
+    <h1><%= title.upcase %></h1>
+    <% if user_signed_in? %>
+        <%= button_to  content_tag(:i, "", class: "fa-solid fa-right-from-bracket"), destroy_user_session_path, method: :delete, class: "icon-btn text-right" %>
+    <% elsif controller_name != 'sessions' %>
+        <%= link_to content_tag(:i, "", class: "fa-solid fa-right-to-bracket"), new_user_session_path, class: "icon-btn text-right" %>
+    <% else %>
+        <%= link_to content_tag(:i, "", class: "fa-solid fa-user-plus"), new_user_registration_path, class: "icon-btn text-right" %>
+    <% end %>
+</header>
+
+<%= render 'shared/alert' %>
+
+<% if user_signed_in? %>
+<div class="side-menu">
+  <div class="side-header">
+    <button type="button" class="icon-btn" onclick="toggleSideMenu();"><i class="fa-solid fa-xmark"></i></button>
+    <h2 class="brand">SpendRite</h2>
+  </div>
+  <div class="profile-container">
+    <div class="user-icon">
+      <i class="fa-solid fa-user "></i>
+    </div>
+    <p class="user-name"><%= current_user.name %></p>
+  </div>
+
+  <div class="side-actions">
+    <%= link_to edit_user_registration_path, class: "action-group" do %>
+      <div class="action-icon">
+        <i class="fa-solid fa-address-book"></i>
+      </div>
+        <p>Account Setting</p>
+    <% end %>
+
+    <%= link_to new_category_path, class: "action-group" do %>
+      <div class="action-icon">
+        <i class="fa-solid fa-folder-plus"></i>
+      </div>
+        <p>Create Category</p>
+    <% end %>
+
+    <%= link_to "https://github.com/uchexm/Spendrit", class: "action-group", target: "_blank" do %>
+      <div class="action-icon">
+        <i class="fa-solid fa-file-code"></i>
+      </div>
+        <p>View Project</p>
+    <% end %>
+
+    <%= link_to "https://github.com/uchexm", class: "action-group", target: "_blank" do %>
+      <div class="action-icon">
+        <i class="fa-brands fa-github"></i>
+      </div>
+        <p>Developer Profile</p>
+    <% end %>
+  </div>
+</div>
+<% end %>
+
+<script>
+function toggleSideMenu() {
+  const menu = document.querySelector(".side-menu");
+  menu.classList.toggle('show');
+}
+</script>

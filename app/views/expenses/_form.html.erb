@@ -1,0 +1,27 @@
+<%= form_with model: [@category, @expense] do |form| %>
+
+  <div class="form-group">
+    <%= form.label :name %>
+    <%= form.text_field :name, autofocus: true, class: 'form-control', placeholder: "Enter expense name", required: true %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :amount %>
+    <%= form.number_field :amount, class: 'form-control', placeholder: "Enter amount in USD", required: true, min: 0 %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :category_ids, "Categories" %>
+    <div class="check-boxes">
+      <%= form.collection_check_boxes :category_ids, @categories, :id, :name, {checked: @category.id} do |b| %>
+        <div class="form-check">
+          <%= b.check_box %>
+          <%= b.label %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+
+  <%= form.submit "Add Expense", class: 'btn btn-primary' %>
+  <%= link_to 'Cancel', category_path(@category), class: 'btn btn-outline' %>
+<% end %>

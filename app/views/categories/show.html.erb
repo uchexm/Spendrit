@@ -1,0 +1,27 @@
+<%= render 'shared/header', title: "#{@category.icon} #{@category.name}", back_link: categories_path %>
+<section class="container">
+<div class="total-header">
+    <p>Spending: <%= number_to_currency(Category.total_spending) %></p>
+    <p><%= @expenses.size == 1 ? "Entry: " : "Entries: " %><%= @expenses.size %></p>
+</div>
+<div class="category-actions">
+    <%= link_to content_tag(:i, "", class: "fa-solid fa-pencil")+ "Edit Category", edit_category_path(@category), class: 'cat-action edit-btn' %>
+    <%= button_to content_tag(:i, "", class: "fa-solid fa-trash")+ "Delete Category", category_path(@category), method: :delete, class: 'cat-action del-btn' %>
+</div>
+<% if @expenses.empty? %>
+    <div class="note-container">
+        <h2 class="note-title">No Expenses Yet!</h2> 
+        <p class="note-text">You haven't added any expenses to this category yet. Click the "Add Expense" button below and enter the details of your expense to track your spending.</p>
+    </div>
+<% else %>
+    <div class="items-container">
+        <% @expenses.each do |expense| %>
+            <%= render 'expense_item', category: @category, expense: expense %>
+        <% end %>
+    </div>
+<% end %>
+
+<div class="action-container">
+    <%= link_to "Add Expense", new_category_expense_path(@category), class: "action-button" %>
+</div>
+</section>

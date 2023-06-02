@@ -1,0 +1,11 @@
+<%= render 'shared/header', back_link: category_path(@category), title: "New Expense" %>
+<section class="container">
+    <% if flash[:alert].present? %>
+        <div class="alert alert-danger">
+            <strong>Error:</strong> <%= flash[:alert] %>
+        </div>
+    <% end %>
+    <div class="form-container">
+        <%= render 'form' %>
+    </div>
+</section>

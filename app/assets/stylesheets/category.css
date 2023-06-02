@@ -1,0 +1,128 @@
+.total-header {
+  background-color: #fff;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 5px -2px #3331;
+}
+
+.total-header p {
+  font-size: 1em;
+  font-weight: 500;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.items-container {
+  padding: 1rem;
+  max-height: 70vh;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  gap: 1rem;
+}
+
+.item-card {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  color: #000;
+  padding: 0.5rem;
+  border: solid 1px transparent;
+  box-shadow: 3px 5px 10px -8px rgba(0, 0, 0, 0.26);
+  text-decoration: none;
+  transition: all 0.2s ease-in;
+}
+
+.item-card:hover {
+  box-shadow: 5px 7px 12px -5px rgba(0, 0, 0, 0.1);
+}
+
+.item-meta {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.item-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-name {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.item-data {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.item-icon {
+  width: 50px;
+  height: 50px;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-green);
+}
+
+.item-value {
+  font-size: 1.1em;
+  font-weight: 400;
+  text-align: right;
+  color: var(--dark);
+}
+
+.category-actions {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+  gap: 2rem;
+}
+
+.cat-action {
+  display: inline-block;
+  background: #fff;
+  border: solid 1px;
+  border-radius: 3px;
+  padding: 3px 5px;
+  text-align: right;
+  font-size: 1em;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.cat-action i {
+  font-size: 1.2em;
+  margin-right: 0.5rem;
+}
+
+.edit-btn {
+  color: var(--dark-blue);
+  border-color: var(--dark-blue);
+}
+
+.edit-btn:hover,
+.edit-btn:active {
+  background-color: var(--dark-blue);
+  color: #fff;
+}
+
+.del-btn {
+  border-color: crimson;
+  color: crimson;
+}
+
+.del-btn:hover,
+.del-btn:active {
+  background-color: crimson;
+  color: #fff;
+}
