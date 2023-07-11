@@ -32,7 +32,7 @@
 
 Introducing Spendrite, the ultimate mobile web application designed to revolutionize your budget management. With Spendrite, you can effortlessly take control of your finances and track your spending habits in a user-friendly and intuitive manner. The app also provides a secure authentication system, allowing users to log in with their email and ensuring the privacy of their information.
 
-## 📸 ERD Diagram <a name="screenshot"></a>
+## 📸 Diagram <a name="screenshot"></a>
 
 <img src="./erd_diagram.png" alt="screenshot" width=800 />
 
