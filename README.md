@@ -25,10 +25,10 @@
 # 📖 Spend Rite <a name="about-project"></a>
 
 Introducing Spendrite, the ultimate mobile web application designed to revolutionize your budget management. With Spendrite, you can effortlessly take control of your finances and track your spending habits in a user-friendly and intuitive manner. Here's a description of the key features and functionalities. 
-[] Transaction Tracking:  
-[] Budget Planning: 
-[] Real-time Expense Monitoring: 
-[] Category Analysis: 
+[]-Transaction Tracking:  
+[]-Budget Planning: 
+[]-Real-time Expense Monitoring: 
+[]-Category Analysis: 
 
 ## Render Deploy 🚀
 
