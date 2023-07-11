@@ -24,7 +24,11 @@
 
 # 📖 Spend Rite <a name="about-project"></a>
 
-Spendrite is a mobile web application where you can manage your budget. You have a list of transactions associated with a category, so that you can see how much money you spent and on what.
+Introducing Spendrite, the ultimate mobile web application designed to revolutionize your budget management. With Spendrite, you can effortlessly take control of your finances and track your spending habits in a user-friendly and intuitive manner. Here's a description of the key features and functionalities. 
+[ ] Transaction Tracking:  
+[ ] Budget Planning: 
+[ ] Real-time Expense Monitoring: 
+[ ] Category Analysis: 
 
 ## Render Deploy 🚀
 
