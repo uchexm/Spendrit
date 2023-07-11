@@ -1,171 +1,171 @@
 <a name="readme-top"></a>
+[![Contributors](https://img.shields.io/github/contributors/uchexm/Spendrit)](https://github.com/uchexm/Spendrit/graphs/contributors)
+[![LastUpdate](https://img.shields.io/github/last-commit/uchexm/Spendrit)](https://github.com/uchexm/Spendrit/commits/dev)
+[![Stargazers](https://img.shields.io/github/stars/uchexm/Spendrit)](https://github.com/uchexm/Spendrit/stargazers)
+[![Issues](https://img.shields.io/github/issues/uchexm/Spendrit)](https://github.com/uchexm/Spendrit/issues)
+[![License](https://img.shields.io/github/license/uchexm/Spendrit)](https://github.com/uchexm/Spendrit/blob/main/LICENSE)
 
-<!-- TABLE OF CONTENTS -->
+<details>
+<summary>Table of Contents</summary>
 
-# 📗 Table of Contents
+- [💰 SpendRite ](#-SpendRite-)
+  - [📸 Screenshots ](#-screenshots-)
+  - [🧰 Tech Stack  ](#-tech-stack--)
+  - [✨ Key Features  ](#-key-features--)
+  - [🚀 Live Demo  ](#-live-demo--)
+  - [📘 Getting Started  ](#-getting-started--)
+    - [📋 Prerequisites](#-prerequisites)
+    - [📂 Setup](#-setup)
+    - [📥 Installation](#-installation)
+    - [💾 Database](#-database)
+    - [💻 Usage](#-usage)
+    - [🧪 Run tests](#-run-tests)
+  - [👨‍🚀 Author  ](#-author--)
+  - [🎯 Future Features  ](#-future-features--)
+  - [🤝 Contribution  ](#-contribution--)
+  - [💖 Show Your Support  ](#-show-your-support--)
+  - [🙏 Acknowledgements](#-acknowledgements)
+  - [📜 License ](#-license-)
+</details>
 
-- [📗 Table of Contents](#-table-of-contents)
-- [📖 Budget-app ](#-practice-test-driven-developmenttdd-)
-  - [🛠 Built With ](#-built-with-)
-  - [🛠 Tech Stack ](#-tech-stack-)
-    - [Key Features ](#key-features-)
-  - [💻 Getting Started ](#-getting-started-)
-    - [Prerequisites](#prerequisites)
-    - [Setup](#setup)
-    - [Install](#install)
-    - [Usage](#usage)
-  - [👥 Authors](#-authors)
-  - [🤝 Contributing ](#-contributing-)
-  - [⭐️ Show your support ](#️-show-your-support-)
-  - [🙏 Acknowledgments ](#-acknowledgments-)
-  - [📝 License ](#-license-)
+# 💰 SpendRite <a name="about-project"></a>
 
-<!-- PROJECT DESCRIPTION -->
+Introducing Spendrite, the ultimate mobile web application designed to revolutionize your budget management. With Spendrite, you can effortlessly take control of your finances and track your spending habits in a user-friendly and intuitive manner. The app also provides a secure authentication system, allowing users to log in with their email and ensuring the privacy of their information.
 
-# 📖 Spend Rite <a name="about-project"></a>
+## 📸 Screenshots <a name="screenshot"></a>
 
-Introducing Spendrite, the ultimate mobile web application designed to revolutionize your budget management. With Spendrite, you can effortlessly take control of your finances and track your spending habits in a user-friendly and intuitive manner. Here's a list of the key features and functionalities. 
-- [ ] Transaction Tracking
-- [ ] Budget Planning
-- [ ] Real-time Expense Monitoring 
-- [ ] Category Analysis
+<img src="./sp.png" alt="screenshot" width=800 />
 
-## Render Deploy 🚀
-
-> [Live demo](https://jh-f1k0.onrender.com/)
-
-## Video demo
-
-> [Video demo](https://www.loom.com/share/2cbe7cf26a7f4ec1b69066a123c2644c)
-
-## 🛠 Built With <a name="built-with"></a>
-
-> <li><a href="https://www.ruby-lang.org/en/">Ruby</a></li>
-> <li><a href="https://rubyonrails.org/">Ruby on Rails</a></li>
-> <li><a href="https://www.postgresql.org/">Postgresql</a></li>
-
-### Key Features <a name="key-features"></a>
-
-> - Add Categories.
-> - List delete categories.
-> - Add transaction.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- GETTING STARTED -->
+## 🧰 Tech Stack  <a name="tech-stack"></a>
 
-## 💻 Getting Started <a name="getting-started"></a>
+- Back-end 💻: Ruby on Rails, PostgreSQL
+- Front-end 🎨: HTML, CSS, JavaScript
+- Authentication 🔐: Devise gem
+- Deployment 🚀: Render
+- Testing 🧪: Rspec, Capybara
 
-## UML Diagram :
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<img src = 'erd_diagram.png'>
+## ✨ Key Features  <a name="key-features"></a>
 
-## To get a local copy up and running, follow these steps.
+- Custom categories: Create your own categories to track expenses
+- Transaction: Easily add/remove expenses
+- Mobile-first Design: Optimized for mobile devices 
 
-### Prerequisites
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-In order to run this project you need:
+## 🚀 Live Demo  <a name="live-demo"></a>
 
-- Mac or PC
-- Install Ruby
-- Install Rails
-- Install Postgresql
-- Understanding of Ruby
+You can visit the [live website here](https://jh-f1k0.onrender.com/).
 
-### Setup
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-- Clone this repository to your desired folder:
+## 📘 Getting Started  <a name="getting-started"></a>
+
+To run this project locally, you'll need to follow these steps.
+
+### 📋 Prerequisites
+
+Make sure you have the following installed on your machine:
+- [Ruby 3.1.3 or higher](https://www.ruby-lang.org/en/)
+- [Rails 7.0.4 or higher](https://rubyonrails.org/)
+- [PostgreSQL 15.2 or higher](https://www.postgresql.org/)
+
+### 📂 Setup
+
+Clone this repository to your desired foler.
 
 ```sh
- git clone git@github.com:uchexm/Spendrit.git
+cd my-project
+git clone git@github.com:uchexm/Spendrit.git 
 ```
 
-- Navigate into the cloned folder
+### 📥 Installation
+
+Install the required gems with:
 
 ```sh
- cd Budget-app
-
+bundle install
 ```
 
-- Install this project with:
+### 💾 Database
+
+Create the databases and run migrations with:
 
 ```sh
- bundle install
+rails db:create
+rails db:migrate
 ```
 
-- Set up the database
-  Change the username and password of your postgres account in `config/database.yml`
+To load the sample data, run:
 
 ```sh
- rails db:create db:migrate
+rails db:seed
 ```
 
-- Start the server
+### 💻 Usage
+
+To run the development server, execute the following command:
 
 ```sh
- rails s
+rails server
 ```
 
-- Run tests
+### 🧪 Run tests
+
+To run tests, run the following command:
 
 ```sh
- rails db:migrate RAILS_ENV=test
-```
-
-```sh
- rspec spec
-```
-
-- if it shows error try using this command
-
-```sh
- bundle exec rspec spec
+rspec spec --format doc
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- AUTHORS -->
+## 👨‍🚀 Author  <a name="author"></a>
 
-## 👥 Authors<a name="authors"></a>
+I am always looking for ways to improve my project. If you have any suggestions or ideas, I would love to hear from you.
 
-👤 **Uchechi Nwaka**
+**Uchechi Nwaka**
 
-- GitHub: [@uchexm](https://github.com/uchexm)
-- LinkedIn: [@nwakauc](https://www.linkedin.com/in/nwakauc/)
-- Twiter [@nwakauc](https://twitter.com/Nwakauc)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- CONTRIBUTING -->
-
-## 🤝 Contributing <a name="contributing"></a>
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](https://github.com/uchexm/Spendrit/issues).
+[![Github](https://img.shields.io/badge/GitHub-673AB7?style=for-the-badge&logo=github&logoColor=white)](https://github.com/uchexm)
+[![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/nwakauc)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:nwakauc1@gmail.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- SUPPORT -->
+## 🎯 Future Features  <a name="future-features"></a>
 
-## ⭐️ Show your support <a name="support"></a>
-
-If you like this project, please leave a ⭐️
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- ACKNOWLEDGEMENTS -->
-
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-- I would like to thank Microverse for providing us with reading materials that aided us to during the project development
-- Credit to the original designer by [Gregoire Vella on Behance](https://www.behance.net/gregoirevella)
+- [x] Side menu
+- [ ] Edit items
+- [ ] Desktop version
+- [ ] Resetable password
+- [ ] Email confirmation
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LICENSE -->
+## 🤝 Contribution  <a name="contribution"></a>
 
-## 📝 License <a name="license"></a>
+Contributions, issues, and feature requests are welcome! 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 💖 Show Your Support  <a name="support"></a>
+
+If you like this project, please consider giving it a ⭐.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🙏 Acknowledgements
+
+This app was designed based on an original design idea by [Gregoire Vella on Behance](https://www.behance.net/gregoirevella). I would like to thank Gregoire Vella for this inspiring design.
+- [App Design Template](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 📜 License <a name="license"></a>
 
 This project is [MIT](./LICENCE) licensed.
 
